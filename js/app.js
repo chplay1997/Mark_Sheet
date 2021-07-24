@@ -201,52 +201,6 @@ function onlyDeleteTable() {
         i--;
     }
 }
-
-//update Table+ chua duoc toi uu
-// function updateTable(example,typeSort) {
-//         var length = listScore.length;
-//         if(length!=0){
-//             var isMediumScore= table.rows[1].cells[5].innerHTML != '?';
-//         }
-//         var isRed= false;
-//         for(var i=0;i<length;i++){
-//             if(table.rows[i].getAttribute("style") == "color: red;")
-//             {
-//                 isRed =true;
-//                 break;
-//             }
-//         }
-//         onlyDeleteTable();
-//         console.log({example});
-//         [example](typeSort);
-//         for(var i =0 ;i<length;i++){
-//             addTable(listScore[i],"DTB");
-//         }
-//         if(isMediumScore){
-//             mediumScore();
-//         }
-//         if(isRed){
-//             goodStudents();
-//         }
-
-// }
-
-//Sắp xếp
-// function sort(typeSort) {
-//     if(listScore[0][typeSort] != undefined){
-//         for(var i =1;i<length;i++){
-//             for(var j=0;j<length-1;j++){
-//                 var ex=listScore[i];
-//                 if(listScore[i][typeSort]<listScore[j][typeSort]){
-//                     listScore[i]=listScore[j];
-//                     listScore[j]=ex;
-//                 }
-//             }
-//         }
-//     }
-
-// }
-
 //Sắp xếp
 function sort(typeSort) {
     if(listScore.length>0){
@@ -268,7 +222,7 @@ function sort(typeSort) {
             
             if(typeSort == 'name') {
                 for(var i =0;i<length-1;i++){
-                    for(var j=i+1;j<length-1;j++){
+                    for(var j=i+1;j<length;j++){
                         var ex=listScore[i];
                         var name1 = listScore[i][typeSort].split(" ");
                         var name2 = listScore[j][typeSort].split(" ");
@@ -304,11 +258,6 @@ function sort(typeSort) {
             }
         }
     }
-}
-
-//Sap xep theo then
-function sortName(typeSort) {
-
 }
 
 //tìm kiếm
