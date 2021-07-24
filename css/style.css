@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bg-yellow {
+  background-color: rgba(187, 187, 23, 0.192);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.form-group>div {
+  display: flex;
+  justify-content: center;
+}
+
+.form-message {
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.form-label {
+  font-weight: 700;
+  line-height: 34px;
+  font-size: 16px;
+  width: 100px;
+}
+
+.form-control {
+    width: 360px;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-control:hover {
+  border-color: #1dbfaf;
+}
+
+.form-group.invalid .form-control,
+.more-change.invalid {
+  border-color: #f33a58;
+}
+
+.form-group.invalid .form-message,
+.more-message,
+.change-message {
+  color: #f33a58;
+}
+
+
+.btn-all {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#btn-1,
+#btn-2 {
+  position: absolute;
+  right: 0;
+}
+
+/*Danh sach*/
+#marks-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: unset;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border-spacing: 1px;
+    border-radius: 2px;
+}
+
+.btn-more {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.list-btn-more {
+  text-align: center;
+  background-color: #333;
+}
+
+.more-input,
+.more-change {
+  border: 3px solid #0dcaf0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#mobile-view {
+  border: unset;
+  border-radius: 0;
+}
+
+/*More*/
+.complete {
+  padding: 0;
+}
+
+@media only screen and (max-width: 767px){
+  .form-group>div {
+    display: block;
+    margin: auto;
+    
+  }
+
+  .btn-all {
+    padding: 0;
+  }
+
+  #btn-mobile,
+  #btn-1,
+  #btn-2,
+  #btn-3 {
+    width: 100%;
+  }
+
+  th:first-child,
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(5),
+  th:nth-child(6){
+    width: 1%!important;
+  }
+
+  #more-mobile {
+    width: 80%;
+    margin-bottom: 6px;
+  }
+  #more-mobile::after {
+    content: "";
+    height: 2px!important;
+    width: 100px;
+    background-color: red;
+  }
+
+  #mobile-view {
+    width: 5%!important;
+  }
+
+  .more-change {
+    border-radius: 0;
+  }
+
+}
